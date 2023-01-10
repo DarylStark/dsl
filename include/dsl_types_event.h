@@ -7,14 +7,14 @@ namespace dsl
 {
     namespace types
     {
-        template <class ObjectType, class SubscriptionType>
+        template <typename ObjectType, typename SubscriptionType>
         struct Event
         {
             const ObjectType &object;
             const SubscriptionType subscription;
         };
 
-        template <class CallbackType>
+        template <typename CallbackType>
         struct Subscription
         {
             CallbackType callback;
